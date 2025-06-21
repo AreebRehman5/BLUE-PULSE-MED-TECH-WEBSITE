@@ -99,6 +99,7 @@
 .hero-header {
     background: url(../img/8bda047e-f78c-47b7-b565-f29571bdbbb7.png) top right no-repeat;
     background-size: cover;
+    height: 600px;
 }
 
 .feature-check-arrow {

@@ -24,7 +24,14 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
+     <!-- Bootstrap CSS (already included) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS Bundle (required for carousel to work) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -38,12 +45,12 @@
 <body>
    
 
-
-   <!-- Navbar Start -->
+<!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
     <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <h2 class="m-0 text-primary">Pain<span class="text-dark">Medicine</span></h2>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/f116bf56-dae0-4bc4-ab45-0010c73b6785.png" alt="Blue Pulse MedTech Logo" height="40" class="me-2">
+            <h2 class="m-0 text-primary">Blue Pulse<span class="text-dark"> Med Tech</span></h2>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -59,14 +66,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
+                <li class="nav-item ">
+                    <a class="nav-link d-flex" href="services.html"> Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="services.html">Testimonial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="services.html">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -78,26 +85,37 @@
 <!-- Navbar End -->
 
 
-    <!-- Hero Start -->
-<div class="container-fluid bg-primary py-5 mb-5 hero-header">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <h1 class="display-4 text-white mb-4">Comprehensive Pain Management Solutions</h1>
-                <p class="text-white mb-5">Expert care for chronic and acute pain conditions with personalized treatment plans.</p>
-                <div class="d-flex align-items-center">
-                    <a href="appointment.html" class="btn btn-outline-light rounded-pill py-3 px-5 me-5 mt-5">Book Appointment</a>
-                    <a href="contact.html" class="btn btn-outline-light rounded-pill py-3 px-5 mt-5">Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid rounded" src="#" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Hero End -->
 
+    <!-- Hero Start -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/4917045-1536x1024.jpg" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="img/empty-modern-medical-office-having-disease-documents-table-equipped-with-contemporary-furniture-hospital-workplace-with-nobody-it-ready-sickness-consultation.jpg" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="img/pexels-mart-production-7088520-1536x1024.jpg" class="d-block w-100" alt="...">
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+ <!-- Hero End -->
 
  <!-- About Start -->
 <div class="container-fluid py-5" style="background: #f8f9fa;">
@@ -105,7 +123,7 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="position-relative h-100">
-                    <img class="img-fluid rounded " src="img/about.jpg"  alt="Main clinic image">
+                    <img class="img-fluid rounded w-100 h-100 object-fit-cover" src="img/about.jpg" alt="Main clinic image">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -176,91 +194,57 @@
     </div>
 </div>
 <!-- About End -->
-    <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Services</h5>
-                <h1 class="display-4">Excellent Medical Services</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-user-md text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Emergency Care</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-procedures text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Operation & Surgery</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-stethoscope text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Outdoor Checkup</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-ambulance text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Ambulance Service</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-pills text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Medicine & Pharmacy</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-microscope text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Blood Testing</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    
+<!-- Services Start -->
+<section class="py-5 bg-light" id="services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h5 class="text-uppercase text-primary fw-bold mb-2">Our Medical Services</h5>
+        <h2 class="fw-semibold display-6">We provide specialized care for various pain conditions with a focus on personalized treatment plans.</h2>
+      </div>
+      <div class="row g-4">
+        
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow service-card p-4">
+            <img src="img/img_facet_compressor_054fbc04aa.webp" alt="Facet Joint Syndrome" class="img-fluid rounded mb-3" style="height: 200px; object-fit: cover;">
+            <h4 class="mb-3 text-primary">Facet Joint Syndrome</h4>
+            <p class="text-muted">Facet joint syndrome, also known as osteoarthritis, refers to the pain experienced at the joints between two vertebrae in the spine.</p>
+            <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+          </div>
         </div>
+  
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow service-card p-4">
+            <img src="img/shutterstock_334626857_1030x672_compressor_495x400_e7b74ef7c0.webp" alt="Arthritis" class="img-fluid rounded mb-3" style="height: 200px; object-fit: cover;">
+            <h4 class="mb-3 text-primary">Arthritis</h4>
+            <p class="text-muted">Arthritis is a prevalent condition characterized by joint pain and joint disease. It affects over 50 million adults and children worldwide.</p>
+            <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow service-card p-4">
+            <img src="img/image_6a0c83bd94.webp" alt="Cluster Headaches" class="img-fluid rounded mb-3" style="height: 200px; object-fit: cover;">
+            <h4 class="mb-3 text-primary">Cluster Headaches</h4>
+            <p class="text-muted">Cluster headaches are a painful condition marked by short, recurring headaches that occur daily for a period of time.</p>
+            <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-primary px-5 py-2 rounded-pill">View All Services</a>
+      </div>
     </div>
-    <!-- Services End -->
-
+  </section>
+  <!-- Services End -->
+  
+  
+  
 
     <!-- Appointment Start -->
     <div class="container-fluid bg-primary my-5 py-5">
@@ -722,6 +706,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
 </html>

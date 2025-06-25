@@ -102,3 +102,12 @@
     
 })(jQuery);
 
+
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.sybrid-navbar');
+    if (window.scrollY > 10) {
+      nav.classList.add('shadow');
+    } else {
+      nav.classList.remove('shadow');
+    }
+  });
